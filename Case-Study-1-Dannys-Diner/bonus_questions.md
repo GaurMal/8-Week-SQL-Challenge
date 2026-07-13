@@ -24,7 +24,7 @@ LEFT JOIN dannys_diner.members AS mem
 ORDER BY
     s.customer_id,
     s.order_date,
-    m.product_name
+    m.product_name;
 ```
 
 ## Output
@@ -79,7 +79,7 @@ WITH
             JOIN dannys_diner.menu AS m ON s.product_id = m.product_id
             LEFT JOIN dannys_diner.members AS mem ON s.customer_id = mem.customer_id
     )
-    
+
 SELECT
     *,
     CASE
@@ -95,9 +95,9 @@ SELECT
 FROM
     combined_data
 ORDER BY
-    s.customer_id,
-    s.order_date,
-    m.product_name
+    customer_id,
+    order_date,
+    product_name;
 ``` 
 
 ## Output
