@@ -44,7 +44,7 @@ How many days has each customer visited the restaurant?
 ```sql
 SELECT
     customer_id,
-    count(DISTINCT order_date) as number_of_days
+    COUNT(DISTINCT order_date) AS number_of_days
 FROM
     dannys_diner.sales
 GROUP BY
@@ -80,7 +80,7 @@ WITH
         SELECT
             s.customer_id,
             m.product_name,
-            DENSE_RANK() Over (
+            DENSE_RANK() OVER (
                 PARTITION BY
                     s.customer_id
                 ORDER BY
@@ -138,7 +138,7 @@ GROUP BY
 ORDER BY
     total_purchase_count DESC
 LIMIT
-    1
+    1;
 ```
 
 ## Output
@@ -163,11 +163,11 @@ Which item was the most popular for each customer?
 
 ```sql
 WITH
-    rank_item as (
+    rank_item AS (
         SELECT
             s.customer_id,
             m.product_name,
-            COUNT(*) as order_count,
+            COUNT(*) AS order_count,
             DENSE_RANK() OVER (
                 PARTITION BY
                     s.customer_id
@@ -202,7 +202,7 @@ WHERE
 | B           | ramen        | 2           |
 | C           | ramen        | 3           |
 
-## Approch 
+## Approach
 Created a CTE to get the rank the total purchase by each customer and filtered rank 1 records to find out which item was the most pupular for each customer. 
 
 ## Answer
@@ -243,7 +243,7 @@ FROM
 JOIN dannys_diner.menu AS menu 
     ON j.product_id = menu.product_id
 WHERE
-    rank = 1
+    rank = 1;
 ``` 
 
 ## Output
@@ -275,7 +275,7 @@ WITH
         SELECT
             s.customer_id,
             s.product_id,
-            DENSE_RANK() over (
+            DENSE_RANK() OVER (
                 PARTITION BY
                     s.customer_id
                 ORDER BY
@@ -298,7 +298,7 @@ JOIN dannys_diner.menu AS m
 WHERE
     rank = 1
 ORDER BY
-    b.customer_id
+    b.customer_id;
 ```
 
 ## Output
@@ -347,7 +347,7 @@ JOIN dannys_diner.menu AS m
 GROUP BY
     b.customer_id
 ORDER BY
-    b.customer_id
+    b.customer_id;
 ```
 
 ## Output
@@ -387,7 +387,7 @@ JOIN dannys_diner.menu AS m
 GROUP BY
     s.customer_id
 ORDER BY
-    s.customer_id
+    s.customer_id;
 ```
 
 ## Output
@@ -435,7 +435,7 @@ WITH
             ON s.customer_id = mem.customer_id
         WHERE
             s.order_date <= '2021-01-31'
-    )
+    );
 Select
     customer_id,
     SUM(points) AS total_points
