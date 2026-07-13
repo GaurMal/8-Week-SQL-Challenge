@@ -206,7 +206,8 @@ WHERE
 Created a CTE to get the rank the total purchase by each customer and filtered rank 1 records to find out which item was the most pupular for each customer. 
 
 ## Answer
-Most popular item for Customer A and C is ramen, while customer B likes all 3 items
+Most popular item for Customer A and C is ramen, while All three menu items tied as Customer B's most frequently purchased items,
+with two purchases each.
 
 
 # Question 6
