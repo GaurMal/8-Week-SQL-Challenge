@@ -1,5 +1,8 @@
+--Create Schema Statement
+
 CREATE SCHEMA dannys_diner;
 
+--Create Table statements
 CREATE TABLE
     dannys_diner.sales (
         customer_id VARCHAR(1),
