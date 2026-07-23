@@ -1,3 +1,9 @@
+# Part E - Bonus Question
+
+This section demonstrates how the existing data model can support future business expansion by introducing a new Supreme pizza to the menu.
+
+---
+
 # Question 1
 
 ## Question

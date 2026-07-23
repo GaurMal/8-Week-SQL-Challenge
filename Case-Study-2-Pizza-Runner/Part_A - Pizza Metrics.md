@@ -1,3 +1,7 @@
+# Part A - Pizza Metrics
+
+This section explores Pizza Runner's key business metrics, including order volume, delivery performance, customer preferences, and ordering trends.
+
 # Question 1
 
 ## Question

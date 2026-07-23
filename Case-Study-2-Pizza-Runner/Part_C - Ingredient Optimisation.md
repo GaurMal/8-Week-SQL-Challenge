@@ -1,3 +1,9 @@
+# Part C - Ingredient Optimisation
+
+This section explores pizza customization by analyzing ingredients, exclusions, extras, and overall ingredient usage across delivered orders.
+
+---
+
 # Question 1
 
 ## Question

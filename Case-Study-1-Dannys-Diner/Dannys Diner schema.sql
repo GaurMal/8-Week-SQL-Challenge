@@ -1,5 +1,4 @@
 --Create Schema Statement
-
 CREATE SCHEMA dannys_diner;
 
 --Create Table statements

@@ -1,3 +1,9 @@
+# Part D - Pricing and Ratings
+
+This section examines Pizza Runner's revenue, delivery costs, customer ratings, and overall business profitability.
+
+---
+
 # Question 1
 
 ## Question

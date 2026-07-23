@@ -1,3 +1,9 @@
+# Part B - Runner and Customer Experience
+
+This section analyzes runner performance and customer experience metrics, including pickup times, delivery durations, distances traveled, and successful delivery rates.
+
+---
+
 # Question 1
 
 ## Question
@@ -306,4 +312,4 @@ ORDER BY
 Used conditional aggregation to count successful deliveries for each runner and divided it by the total number of assigned orders to calculate the delivery success percentage.
 
 ## Answer
-Runner 1 successfully delivered 100% of assigned orders, Runner 2 delivered 75%, and Runner 3 delivered 50%.
+Runner 1 achieved the highest successful delivery rate and delivered 100% of assigned orders, Runner 2 delivered 75%, and Runner 3 delivered 50%.
