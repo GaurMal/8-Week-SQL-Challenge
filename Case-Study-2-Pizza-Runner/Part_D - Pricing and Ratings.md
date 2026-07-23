@@ -35,7 +35,7 @@ SELECT
         )
     ) AS total
 FROM
-    order_summary
+    order_summary;
 ```
 
 ## Output
@@ -96,11 +96,11 @@ WITH
             order_id
     )
 SELECT
-    Concat ('$ ', SUM(money_made_in_USD) + Sum(total)) AS grand_total
+    Concat ('$ ', SUM(b.money_made_in_USD) + Sum(e.extra_charge)) AS grand_total
 FROM
     base_revenue AS b
     LEFT JOIN extra_count AS e 
-        ON b.order_id = e.order_id
+        ON b.order_id = e.order_id;
 ```
 
 ## Output
@@ -173,7 +173,7 @@ VALUES
 Select
     *
 FROM
-    pizza_runner.runner_ratings
+    pizza_runner.runner_ratings;
 ```
 
 ## Output
@@ -256,7 +256,7 @@ FROM
     JOIN pizza_runner.runner_ratings AS ra 
         ON ra.order_id = o.order_id
 WHERE
-    r.cancellation IS NULL
+    r.cancellation IS NULL;
 ```
 
 ## Output
@@ -324,7 +324,7 @@ SELECT
 FROM
     order_summary AS os
     JOIN runner_payment AS r 
-        ON os.order_id = r.order_id
+        ON os.order_id = r.order_id;
 ```
 
 ## Output

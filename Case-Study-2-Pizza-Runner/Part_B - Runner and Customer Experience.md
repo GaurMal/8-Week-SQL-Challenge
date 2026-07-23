@@ -20,7 +20,7 @@ FROM
 GROUP BY
     week_number
 ORDER BY
-    week_number
+    week_number;
 ```
 
 ## Output
@@ -32,7 +32,7 @@ ORDER BY
 | 3           | 1                 |
 
 ## Approach
-Calculated the number of days between each runner's' registration date and the starting date (2021-01-01), grouped them into 7-day periods, and counted runner signups for each week.
+Calculated the number of days between each runner's registration date and the starting date (2021-01-01), grouped them into 7-day periods, and counted runner signups for each week.
 
 ## Answer
 2 runners signed up in the first week, while 1 runner signed up in both the second and third weeks.
@@ -74,7 +74,7 @@ FROM
 WHERE
     r.cancellation IS NULL
 GROUP BY
-    r.runner_id
+    r.runner_id;
 ```
 
 ## Output
@@ -134,7 +134,7 @@ WHERE
 GROUP BY
     o.pizza_count
 ORDER BY
-    o.pizza_count
+    o.pizza_count;
 ```
 
 ## Output
@@ -172,17 +172,17 @@ WITH
     )
 SELECT
     o.customer_id,
-    Round(Avg(r.distance_km), 2) as avg_distance_travelled_in_km
+    ROUND(AVG(r.distance_km), 2) AS avg_distance_travelled_in_km
 FROM
     pizza_runner.cleaned_runner_orders AS r
     JOIN order_summary AS o 
         ON o.order_id = r.order_id
 WHERE
-    r.cancellation is null
+    r.cancellation IS NULL 
 GROUP BY
     o.customer_id
 ORDER BY
-    o.customer_id
+    o.customer_id;
 ```
 
 ## Output
@@ -216,7 +216,7 @@ SELECT
 FROM
     pizza_runner.cleaned_runner_orders
 WHERE
-    cancellation is null
+    cancellation is null;
 ``` 
 
 ## Output
@@ -249,7 +249,7 @@ WHERE
     cancellation IS NULL
 ORDER BY
     runner_id,
-    order_id
+    order_id;
 ```
 
 ## Output
@@ -269,7 +269,7 @@ ORDER BY
 Calculated delivery speed for each successful order using the formula distance ÷ time, converting delivery duration from minutes to hours.
 
 ## Answer
-Runner 2 showed the greatest variation in delivery speed, ranging from 35.10 km/hr to 93.60 km/hr. Even for two deliveries covering the same distance of 23.4 km, the calculated speeds differed substantially, suggesting that delivery duration varied significantly or may have been rounded.
+Runner 2 showed the greatest variation in delivery speed, ranging from 35.10 km/h to 93.60 km/h. Even for two deliveries covering the same distance of 23.4 km, the calculated speeds differed substantially, suggesting that delivery duration varied significantly or may have been rounded.
 
 --- 
 
@@ -297,7 +297,7 @@ FROM
 GROUP BY
     runner_id
 ORDER BY
-    runner_id
+    runner_id;
 ```
 
 ## Output

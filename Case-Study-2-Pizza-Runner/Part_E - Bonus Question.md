@@ -15,14 +15,16 @@ If Danny wants to expand his range of pizzas - how would this impact the existin
 INSERT INTO
     pizza_runner.pizza_names
 VALUES
-    (3, 'Supreme')
-Select
+    (3, 'Supreme');
+
+SELECT
     *
-from
-    pizza_runner.pizza_names
+FROM
+    pizza_runner.pizza_names;
+
 INSERT INTO
     pizza_runner.pizza_recipes (pizza_id, toppings)
-Select
+SELECT
     3,
     STRING_AGG (
         topping_id::TEXT,
@@ -31,11 +33,12 @@ Select
             topping_id
     )
 FROM
-    pizza_runner.pizza_toppings
+    pizza_runner.pizza_toppings;
+    
 SELECT
     *
 FROM
-    pizza_runner.pizza_recipes
+    pizza_runner.pizza_recipes;
 ```
 
 ## Output

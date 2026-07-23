@@ -2,6 +2,8 @@
 
 This section explores Pizza Runner's key business metrics, including order volume, delivery performance, customer preferences, and ordering trends.
 
+---
+
 # Question 1
 
 ## Question
@@ -68,7 +70,7 @@ FROM
 WHERE
     cancellation IS NULL
 GROUP BY
-    runner_id
+    runner_id;
 ```
 
 ## Output
@@ -104,7 +106,7 @@ FROM
 WHERE
     r.cancellation IS NULL
 GROUP BY
-    p.pizza_name
+    p.pizza_name;
 ```
 
 ## Output
@@ -146,7 +148,7 @@ FROM
 GROUP BY
     customer_id
 ORDER BY
-    customer_id
+    customer_id;
 ```
 
 ## Output
@@ -189,7 +191,7 @@ WITH
 SELECT
     MAX(total_pizza_ordered) AS max_pizzas_delivered
 FROM
-    pizza_count
+    pizza_count;
 ``` 
 
 ## Output
@@ -237,7 +239,7 @@ FROM
 WHERE
     r.cancellation IS NULL
 GROUP BY
-    c.customer_id
+    c.customer_id;
 ```
 
 ## Output
@@ -279,7 +281,7 @@ FROM
     JOIN pizza_runner.cleaned_runner_orders AS r 
         ON c.order_id = r.order_id
 WHERE
-    r.cancellation IS NULL
+    r.cancellation IS NULL;
 ```
 
 ## Output
@@ -316,7 +318,7 @@ FROM
 GROUP BY
     hour
 ORDER BY
-    hour
+    hour;
 ```
 
 ## Output
@@ -345,13 +347,13 @@ What was the volume of orders for each day of the week?
 ```sql
 SELECT
     TO_CHAR (order_time, 'DAY') AS day,
-    count(*) AS total_pizzas_volume
+    count(DISTINCT order_id) AS total_pizzas_volume
 FROM
     pizza_runner.cleaned_customer_orders
 GROUP BY
     day
 ORDER BY
-    total_pizzas_volume DESC
+    total_pizzas_volume DESC;
 ```
 
 ## Output

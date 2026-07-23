@@ -1,7 +1,7 @@
 --CREATE SCHEMA pizza_runner;
 
-CREATE SCHEMA pizza_runner;
-
+CREATE SCHEMA IF NOT EXISTS pizza_runner;
+    
 -- CREATE TABLE statements
 -- The runners table shows the registration_date for each new runner
 
@@ -19,7 +19,7 @@ CREATE TABLE
         order_time TIMESTAMP
     );
 
--- After each orders are received through the system - they are assigned to a runner - however not all orders are fully completed and can be cancelled by the restaurant or the customer.
+-- After orders are received through the system - they are assigned to a runner - however not all orders are fully completed and can be cancelled by the restaurant or the customer.
 CREATE TABLE
     pizza_runner.runner_orders (
         order_id INTEGER,
@@ -34,7 +34,7 @@ CREATE TABLE
 CREATE TABLE
     pizza_runner.pizza_recipes (pizza_id INTEGER, toppings TEXT);
 
--- table contains all of the topping_name values with their corresponding topping_id value
+-- This table contains all of the topping_name values with their corresponding topping_id value
 CREATE TABLE
     pizza_runner.pizza_toppings (topping_id INTEGER, topping_name TEXT);
 
@@ -42,9 +42,8 @@ CREATE TABLE
 CREATE TABLE
     pizza_runner.pizza_names (pizza_id INTEGER, pizza_name TEXT);
 
-3.
-INSERT INTO
-    statements
+-- INSERT INTO statements
+
 INSERT INTO
     pizza_runner.runners (runner_id, registration_date)
 VALUES

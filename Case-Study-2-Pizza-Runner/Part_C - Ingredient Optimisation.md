@@ -27,7 +27,7 @@ From
     JOIN pizza_runner.pizza_toppings AS t 
         ON rec.toppings_id = t.topping_id
 GROUP BY
-    p.pizza_name
+    p.pizza_name;
 ```
 
 ## Output
@@ -74,7 +74,7 @@ FROM
 ORDER BY
     extra_count DESC
 LIMIT
-    1
+    1;
 ```
 
 ## Output
@@ -84,7 +84,7 @@ LIMIT
 | Bacon                |
 
 ## Answer
-Most commonly added extra topping is Bacon.
+Bacon was the most commonly added extra topping.
 
 ---
 
@@ -117,7 +117,7 @@ FROM
 ORDER BY
     exclusion_count DESC
 LIMIT
-    1
+    1;
 ```
 
 ## Output
@@ -127,7 +127,7 @@ LIMIT
 | Cheese                |
 
 ## Answer
-Most common exclusion is Cheese.
+Cheese was the most commonly excluded topping.
 
 --- 
 
@@ -197,7 +197,7 @@ SELECT
         CASE
             WHEN ext.extras IS NOT NULL THEN ' ' || ext.extras
         END
-    )
+    ) AS order_item
 FROM
     pizza_runner.cleaned_customer_orders AS c
     LEFT JOIN exclusions AS exc 
@@ -205,12 +205,12 @@ FROM
     LEFT JOIN extras AS ext 
         ON c.line_item_id = ext.line_item_id
     JOIN pizza_runner.pizza_names AS p 
-        ON c.pizza_id = p.pizza_id
+        ON c.pizza_id = p.pizza_id;
 ```
 
 ## Output
 
-| order_id | customer_id | concat                                                          |
+| order_id | customer_id | order_item                                                      |
 | -------- | ----------- | --------------------------------------------------------------- |
 | 1        | 101         | Meatlovers                                                      |
 | 2        | 101         | Meatlovers                                                      |
@@ -345,7 +345,7 @@ GROUP BY
     i.customer_id,
     p.pizza_name
 ORDER BY
-    i.line_item_id
+    i.line_item_id;
 ```
 
 ## Output
@@ -465,7 +465,7 @@ FROM
         ON i.toppings_id = t.topping_id
 ORDER BY
     i.toppings_count DESC,
-    t.topping_name
+    t.topping_name;
 ```
 
 ## Output
