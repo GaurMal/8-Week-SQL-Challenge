@@ -196,9 +196,10 @@ WITH
             foodie_fi.subscriptions
     )
 SELECT
-    COUNT(DISTINCT s.customer_id) AS total_churned_cust,
     CONCAT (
-        ROUND(COUNT(DISTINCT s.customer_id) * 100.0, 2) / t.total_count,
+        ROUND(
+            COUNT(DISTINCT s.customer_id) * 100.0 / t.total_count
+        ),
         ' %'
     ) AS pct_of_churned_cust
 FROM
