@@ -57,18 +57,18 @@ ORDER BY
 | 19          | pro annual    | 2020-08-29 |
 
 ## Answer
-Customer 1 began with a trial plan on 1 August 2020 and upgraded to the Basic Monthly plan after completing the 7-day trial period.
-
-Customer 2 began with a trial plan on 20 September 2020 and upgraded to the Pro Annual plan after completing the 7-day trial period.
-
-Customer 11 began with a trial plan on 19 November 2020 and transitioned to the Churn plan on 26 November 2020 after completing the 7-day trial period.
-
-Customer 13 began with a trial plan on 15 December 2020, upgraded to the Basic Monthly plan on 22 December 2020 after completing the 7-day trial period, and later upgraded to the Pro Monthly plan on 29 March 2021.
-
-Customer 15 began with a trial plan on 17 March 2020, upgraded to the Pro Monthly plan on 24 March 2020 after completing the 7-day trial period, and later transitioned to the Churn plan on 29 April 2020.
-
-Customer 16 began with a trial plan on 31 May 2020, upgraded to the Basic Monthly plan on 7 June 2020 after completing the 7-day trial period, and later upgraded to the Pro Annual plan on 21 October 2020.
-
-Customer 18 began with a trial plan on 6 July 2020 and upgraded to the Pro Monthly plan on 13 July 2020 after completing the 7-day trial period.
-
-Customer 19 began with a trial plan on 22 June 2020, upgraded to the Pro Monthly plan on 29 June 2020 after completing the 7-day trial period, and later upgraded to the Pro Annual plan on 29 August 2020. 
+Customer 1 began with a trial plan on 1 August 2020 and subscribed to the Basic Monthly plan after completing the 7-day trial period.
+---
+Customer 2 began with a trial plan on 20 September 2020 and subscribed to the Pro Annual plan after completing the 7-day trial period.
+---
+Customer 11 began with a trial plan on 19 November 2020 and churned after completing the trial on 26 November 2020 after completing the 7-day trial period.
+---
+Customer 13 began with a trial plan on 15 December 2020, subscribed to the Basic Monthly plan on 22 December 2020 after completing the 7-day trial period, and later upgraded to the Pro Monthly plan on 29 March 2021.
+---
+Customer 15 began with a trial plan on 17 March 2020, subscribed to the Pro Monthly plan on 24 March 2020 after completing the 7-day trial period, and later transitioned to the Churn plan on 29 April 2020.
+---
+Customer 16 began with a trial plan on 31 May 2020, subscribed to the Basic Monthly plan on 7 June 2020 after completing the 7-day trial period, and later upgraded to the Pro Annual plan on 21 October 2020.
+---
+Customer 18 began with a trial plan on 6 July 2020 and subscribed to the Pro Monthly plan on 13 July 2020 after completing the 7-day trial period.
+---
+Customer 19 began with a trial plan on 22 June 2020, subscribed to the Pro Monthly plan on 29 June 2020 after completing the 7-day trial period, and later upgraded to the Pro Annual plan on 29 August 2020. 

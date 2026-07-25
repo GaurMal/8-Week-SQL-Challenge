@@ -116,8 +116,7 @@ ORDER BY
 - Sorted the results in descending order of event count.
 
 ## Answer
-A total of 202 subscription events occurred after the year 2020. Churn was the most common event (71), followed by Pro Annual (63) and Pro Monthly (60), while only 8 customers remained on the Basic Monthly plan.
-
+A total of 202 subscription events occurred after 2020. Churn was the most common event with 71 occurrences, followed by Pro Annual with 63 and Pro Monthly with 60. Basic Monthly had the fewest events, with 8 occurrences.
 ---
 
 # Question 4
@@ -199,7 +198,7 @@ WITH
 SELECT
     COUNT(DISTINCT s.customer_id) AS total_churned_cust,
     CONCAT (
-        COUNT(DISTINCT s.customer_id) * 100 / t.total_count,
+        ROUND(COUNT(DISTINCT s.customer_id) * 100.0, 2) / t.total_count,
         ' %'
     ) AS pct_of_churned_cust
 FROM
@@ -209,7 +208,7 @@ WHERE
     s.current_plan = 0
     AND s.next_plan = 4
 GROUP BY
-    t.total_count
+    t.total_count;
 ```
 
 ## Output
@@ -270,7 +269,7 @@ FROM
         ON s.current_plan = p.plan_id
     CROSS JOIN total_customers AS t
 WHERE
-    s.current_plan in (1, 2, 3, 4)
+    s.current_plan IN (1, 2, 3, 4)
     AND s.prev_plan = 0
 GROUP BY
     p.plan_name,
@@ -378,7 +377,7 @@ FROM
     foodie_fi.subscriptions
 WHERE
     plan_id = 3
-    and EXTRACT(
+    AND EXTRACT(
         YEAR
         FROM
             start_date
@@ -503,7 +502,7 @@ SELECT
 FROM
     bucket_count
 ORDER BY
-    bucket_number
+    bucket_number;
 ```
 
 ## Output
@@ -576,7 +575,7 @@ WHERE
         YEAR
         FROM
             transition_date
-    ) = 2020
+    ) = 2020;
 ```
 
 ## Output
