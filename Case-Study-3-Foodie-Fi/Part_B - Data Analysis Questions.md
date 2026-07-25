@@ -196,7 +196,8 @@ WITH
             foodie_fi.subscriptions
     )
 SELECT
-    CONCAT (
+    COUNT(DISTINCT s.customer_id) AS total_churned_cust,
+    CONCAT(
         ROUND(
             COUNT(DISTINCT s.customer_id) * 100.0 / t.total_count
         ),
