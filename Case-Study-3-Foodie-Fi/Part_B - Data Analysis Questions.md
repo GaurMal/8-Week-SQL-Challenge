@@ -117,6 +117,7 @@ ORDER BY
 
 ## Answer
 A total of 202 subscription events occurred after 2020. Churn was the most common event with 71 occurrences, followed by Pro Annual with 63 and Pro Monthly with 60. Basic Monthly had the fewest events, with 8 occurrences.
+
 ---
 
 # Question 4
