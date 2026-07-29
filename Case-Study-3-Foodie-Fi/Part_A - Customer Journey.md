@@ -4,7 +4,7 @@ This section explores the subscription journeys of Foodie-Fi customers and highl
 
 ---
 
- # Question 1
+# Question 1
 
 ## Question
 Based off the 8 sample customers provided in the sample from the subscriptions table, write a brief description about each customer’s onboarding journey.

@@ -25,6 +25,12 @@ WITH
             p.plan_name AS current_plan_name,
             s.start_date AS current_start,
             p.price AS current_price,
+            LAG (s.plan_id) OVER (
+                PARTITION BY
+                    s.customer_id
+                ORDER BY
+                    s.start_date
+            ) AS previous_plan,
             LEAD (s.plan_id) OVER (
                 PARTITION BY
                     s.customer_id
@@ -39,8 +45,7 @@ WITH
             ) AS next_start
         FROM
             foodie_fi.subscriptions AS s
-            JOIN foodie_fi.plans AS p 
-                ON s.plan_id = p.plan_id
+            JOIN foodie_fi.plans AS p ON s.plan_id = p.plan_id
     ),
     paid_plan_details AS (
         SELECT
@@ -126,12 +131,10 @@ WITH
             END AS amount
         FROM
             paid_plan_details AS ppd
-            JOIN foodie_fi.plans AS p 
-                ON ppd.next_plan = p.plan_id
-            JOIN payment_history AS ph 
-                ON ppd.customer_id = ph.customer_id
-                AND ph.current_plan = 1
-                AND ph.payment_date < ppd.next_start
+            JOIN foodie_fi.plans AS p ON ppd.next_plan = p.plan_id
+            JOIN payment_history AS ph ON ppd.customer_id = ph.customer_id
+            AND ph.current_plan = 1
+            AND ph.payment_date < ppd.next_start
         WHERE
             ppd.transition_plan = 'basic_to_pro_annual'
         GROUP BY
@@ -151,12 +154,10 @@ WITH
             p.price AS amount
         FROM
             paid_plan_details AS ppd
-            JOIN foodie_fi.plans AS p 
-                ON ppd.next_plan = p.plan_id
-            JOIN pro_monthly_transition AS pmt 
-                ON ppd.customer_id = pmt.customer_id
-                AND pmt.current_plan = 2
-                AND pmt.payment_date < ppd.next_start
+            JOIN foodie_fi.plans AS p ON ppd.next_plan = p.plan_id
+            JOIN pro_monthly_transition AS pmt ON ppd.customer_id = pmt.customer_id
+            AND pmt.current_plan = 2
+            AND pmt.payment_date < ppd.next_start
         WHERE
             ppd.transition_plan = 'pro_monthly_to_pro_annual'
         GROUP BY
@@ -165,6 +166,19 @@ WITH
             p.plan_name,
             ppd.next_start,
             p.price
+    ),
+    direct_pro_annual_payments AS (
+        SELECT
+            customer_id,
+            current_plan AS plan_id,
+            current_plan_name AS plan_name,
+            current_start AS payment_date,
+            current_price AS amount
+        FROM
+            timeline_with_plan_details
+        WHERE
+            current_plan = 3
+            AND previous_plan = 0
     ),
     all_payments AS (
         SELECT
@@ -185,6 +199,11 @@ WITH
             *
         FROM
             pro_monthly_to_annual_payments
+        UNION ALL
+        SELECT
+            *
+        FROM
+            direct_pro_annual_payments
     )
 SELECT
     *,
@@ -215,6 +234,7 @@ ORDER BY
 | 1           | 1       | basic monthly | 2020-10-08   | 9.90   | 3             |
 | 1           | 1       | basic monthly | 2020-11-08   | 9.90   | 4             |
 | 1           | 1       | basic monthly | 2020-12-08   | 9.90   | 5             |
+| 2           | 3       | pro annual    | 2020-09-27   | 199.00 | 1             |
 | 13          | 1       | basic monthly | 2020-12-22   | 9.90   | 1             |
 | 15          | 2       | pro monthly   | 2020-03-24   | 19.90  | 1             |
 | 15          | 2       | pro monthly   | 2020-04-24   | 19.90  | 2             |
