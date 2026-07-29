@@ -66,7 +66,7 @@ The following questions could be included in an exit survey to better understand
 3. Did you face any issues with the content, pricing, features, or user experience?
 4. Is there any feature or improvement that would have encouraged you to continue your subscription?
 5. Would you consider subscribing to Foodie-Fi again in the future? If yes, under what circumstances?
-6. Please share any additional feedback or suggestions that could help us improve our service.
+6. Please share any additional feedback or suggestions that could help us improve our service.  
 
 ---
 

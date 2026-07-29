@@ -279,9 +279,11 @@ ORDER BY
 
 8. Created another payment stream for Pro Monthly to Pro Annual upgrades. The annual payment was moved to the end of the customer's current Pro Monthly billing period and charged at the full annual price.
 
-9. Combined the monthly and annual payment streams using `UNION ALL`.
+9. Created a separate payment stream for customers who moved directly from the free trial to Pro Annual. The annual fee was charged on the Pro Annual plan's start date.
 
-10. Filtered the combined results to payments occurring during 2020 and assigned a sequential payment order to each customer using `ROW_NUMBER()`.
+10. Combined the monthly and annual payment streams using `UNION ALL`.
+
+11. Filtered the combined results to payments occurring during 2020 and assigned a sequential payment order to each customer using `ROW_NUMBER()`.
 
 ## Answer
 
