@@ -1,5 +1,5 @@
 -- Case Study 4: Data Bank
--- CREATE SCHEMA foodie_fi;
+-- CREATE SCHEMA data_bank;
 
 CREATE SCHEMA data_bank;
 
