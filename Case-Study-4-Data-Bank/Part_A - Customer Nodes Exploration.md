@@ -65,7 +65,7 @@ ORDER BY
 | Oceania     | 5           |
 
 ## Answer
-There are 3,500 customer-node records distributed across the five regions. Africa has the highest count (770), while Oceania has the lowest (616).
+Each of the five regions contains **5 distinct nodes**.
 
 ---
 
