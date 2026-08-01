@@ -2,6 +2,7 @@
 
 **Database:** PostgreSQL  
 **Difficulty:** Beginner → Intermediate  
+**Questions Solved:** 10 + 2 Bonus  
 **Topics:** JOINs • CTEs • Window Functions • Aggregations
 
 ## Overview
@@ -77,9 +78,9 @@ Case-Study-1-Dannys-Diner/
 
 | File | Description |
 |------|-------------|
-| [`schema.sql`](Dannys Diner schema.sql) | Creates the schema, tables, and sample data used in the case study. |
+| [`schema.sql`](Dannys%20Diner%20schema.sql) | Creates the schema, tables, and sample data used in the case study. |
 | [`solutions.md`](solutions.md) | Contains solutions, outputs, approaches, and answers for all case-study questions. |
-| [`Bonus Question.md`](Bonus Question.md) | Bonus questions |
+| [`Bonus Question.md`](Bonus%20Question.md) | Contains solutions for the bonus questions. |
 
 ## Key Insights
 
@@ -103,8 +104,8 @@ Through this case study, I strengthened my understanding of:
 
 ## Repository Navigation
 
-- 📄 [View Database Schema](Dannys Diner schema.sql)
+- 📄 [View Database Schema](Dannys%20Diner%20schema.sql)
 - 📄 [View SQL Solutions](Solutions.md)
-- 📄 [View Bonus Solutions](Bonus Question.md)
+- 📄 [View Bonus Solutions](Bonus%20Question.md)
 - ⬅ [Back to Main Repository](../README.md)
 
