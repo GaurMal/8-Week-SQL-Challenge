@@ -78,7 +78,7 @@ Case-Study-1-Dannys-Diner/
 | File | Description |
 |------|-------------|
 | [`schema.sql`](Dannys Diner schema.sql) | Creates the schema, tables, and sample data used in the case study. |
-| [`solutions.md`](Solutions.md) | Contains solutions, outputs, approaches, and answers for all case-study questions. |
+| [`solutions.md`](solutions.md) | Contains solutions, outputs, approaches, and answers for all case-study questions. |
 | [`Bonus Question.md`](Bonus Question.md) | Bonus questions |
 
 ## Key Insights
