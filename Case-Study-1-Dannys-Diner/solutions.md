@@ -1,3 +1,22 @@
+# Solutions
+
+## Index
+
+| Question | Description |
+|----------|-------------|
+| [Question 1](#question-1) | Total amount spent by each customer |
+| [Question 2](#question-2) | Number of visit days |
+| [Question 3](#question-3) | First item purchased |
+| [Question 4](#question-4) | Most purchased menu item |
+| [Question 5](#question-5) | Most popular item by customer |
+| [Question 6](#question-6) | First purchase after becoming a member |
+| [Question 7](#question-7) | Purchase before membership |
+| [Question 8](#question-8) | Spending before membership |
+| [Question 9](#question-9) | Loyalty points |
+| [Question 10](#question-10) | First-week membership bonus points |
+
+---
+
 # Question 1
 
 ## Question
