@@ -8,6 +8,18 @@ The purpose of this section is to understand how customers use their Data Bank a
 
 ---
 
+## Index
+
+| Question | Description |
+|----------|-------------|
+| [Question 1](#question-1) | Transaction type summary |
+| [Question 2](#question-2) | Average historical deposits |
+| [Question 3](#question-3) | Customers with multiple deposits and purchases/withdrawals |
+| [Question 4](#question-4) | Monthly closing balance |
+| [Question 5](#question-5) | Customers increasing closing balance by more than 5% |
+
+---
+
 # Question 1
 
 ## Question

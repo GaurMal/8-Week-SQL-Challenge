@@ -8,6 +8,18 @@ These questions provide an initial overview of the customer-node structure befor
 
 ---
 
+## Index
+
+| Question | Description |
+|----------|-------------|
+| [Question 1](#question-1) | Unique customer nodes |
+| [Question 2](#question-2) | Nodes per region |
+| [Question 3](#question-3) | Customers per region |
+| [Question 4](#question-4) | Average reallocation days |
+| [Question 5](#question-5) | Reallocation percentiles |
+
+---
+
 # Question 1
 
 ## Question

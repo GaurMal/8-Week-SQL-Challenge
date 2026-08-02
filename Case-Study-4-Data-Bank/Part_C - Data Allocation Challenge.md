@@ -8,6 +8,19 @@ The analysis compares several allocation models, including running balances, mon
 
 ---
 
+## Index
+
+| Section | Description |
+|---------|-------------|
+| [Section 1](#1-running-customer-balance) | Running customer balance after each transaction |
+| [Section 2](#2-customer-balance-at-the-end-of-each-month) | Customer closing balance at month-end |
+| [Section 3](#3-minimum-average-and-maximum-values-of-the-running-customer-balance) | Minimum, average and maximum running balances |
+| [Section 4](#4-option-1-previous-month-end-balance-allocation) | Allocation based on previous month-end balance |
+| [Section 5](#5-option-2-previous-30-day-average-balance-allocation) | Allocation based on previous 30-day average balance |
+| [Section 6](#6-option-3-real-time-data-allocation) | Allocation based on real-time balances |
+
+---
+
 # Requirement
 
 To test out a few different hypotheses, the Data Bank team wants to run an experiment where different groups of customers would be allocated data using three different options:
