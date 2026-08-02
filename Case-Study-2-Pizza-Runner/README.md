@@ -158,3 +158,4 @@ Through this case study, I strengthened my understanding of:
 - 📄 [View Part C - Ingredient Optimisation](Part_C%20-%20Ingredient%20Optimisation.md)
 - 📄 [View Part D - Pricing and Ratings](Part_D%20-%20Pricing%20and%20Ratings.md)
 - 📄 [View Part E - Bonus Question](Part_E%20-%20Bonus%20Question.md)
+- ⬅️ [Back to Main Repository](../README.md)

@@ -113,11 +113,10 @@ Case-Study-4-Data-Bank/
 
 ## Key Insights
 
-- Data Bank operated across **5 regions**, with customer nodes distributed evenly throughout the network.
-- Customer reallocation periods averaged approximately **15 days**, indicating frequent movement between infrastructure nodes.
+- Data Bank operated across **5 regions**, with all **5 available nodes** appearing in each region.- Customer reallocation periods averaged approximately **15 days**, indicating frequent movement between infrastructure nodes.
 - Deposits were the most common transaction type, accounting for the majority of customer banking activity.
-- Most customers maintained positive monthly balances, although purchases and withdrawals caused negative closing balances for some months.
-- Only a subset of customers consistently increased their monthly closing balances by more than **5%**, highlighting varying saving behaviours.
+- Monthly closing balances varied significantly across customers, with purchases and withdrawals causing negative balances in some cases.
+- **37% of customers** increased their closing balance by more than **5%** compared with at least one previous month, highlighting differences in customer saving behaviour.
 - Running account balances enabled the comparison of multiple data-allocation strategies, demonstrating how storage requirements vary depending on whether balances are calculated using month-end snapshots, average balances, or real-time balances.
 - The interest-based allocation challenge showed that business rules significantly influence projected storage requirements, reinforcing the importance of clearly defined allocation policies.
 
@@ -145,3 +144,4 @@ Through this case study, I strengthened my understanding of:
 - 📄 [View Part B - Customer Transactions](Part_B%20-%20Customer%20Transactions.md)
 - 📄 [View Part C - Data Allocation Challenge](Part_C%20-%20Data%20Allocation%20Challenge.md)
 - 📄 [View Part D - Extra Challenge](Part_D%20-%20Extra%20Challenge.md)
+- ⬅️ [Back to Main Repository](../README.md)

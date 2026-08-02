@@ -127,3 +127,4 @@ Through this case study, I strengthened my understanding of:
 - 📄 [View Database Schema](Dannys%20Diner%20schema.sql)
 - 📄 [View SQL Solutions](Solutions.md)
 - 📄 [View Bonus Solutions](Bonus%20Question.md)
+- ⬅️ [Back to Main Repository](../README.md)
