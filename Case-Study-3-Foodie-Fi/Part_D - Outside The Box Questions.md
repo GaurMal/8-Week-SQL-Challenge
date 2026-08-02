@@ -4,6 +4,18 @@ This section explores open-ended business and technical questions related to Foo
 
 ---
 
+## Index
+
+| Question | Description |
+|----------|-------------|
+| [Question 1](#question-1) | Calculating Foodie-Fi's growth rate |
+| [Question 2](#question-2) | Recommended business performance metrics |
+| [Question 3](#question-3) | Customer journeys affecting retention |
+| [Question 4](#question-4) | Customer cancellation survey design |
+| [Question 5](#question-5) | Strategies to reduce churn |
+
+---
+
 # Question 1
 
 ## Question

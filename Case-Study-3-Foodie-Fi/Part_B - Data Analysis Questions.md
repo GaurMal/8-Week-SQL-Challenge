@@ -4,6 +4,24 @@ This section analyzes customer behavior and subscription trends, including plan 
 
 ---
 
+## Index
+
+| Question | Description |
+|----------|-------------|
+| [Question 1](#question-1) | Total number of customers |
+| [Question 2](#question-2) | Monthly distribution of trial starts |
+| [Question 3](#question-3) | Subscription events after 2020 |
+| [Question 4](#question-4) | Customer churn count and percentage |
+| [Question 5](#question-5) | Customers who churned after trial |
+| [Question 6](#question-6) | Plan selection after the trial |
+| [Question 7](#question-7) | Plan distribution at the end of 2020 |
+| [Question 8](#question-8) | Annual-plan upgrades in 2020 |
+| [Question 9](#question-9) | Average time to upgrade to annual |
+| [Question 10](#question-10) | Annual upgrades by 30-day periods |
+| [Question 11](#question-11) | Downgrades from Pro Monthly to Basic Monthly |
+
+---
+
 # Question 1
 
 ## Question
