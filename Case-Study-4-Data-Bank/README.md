@@ -113,7 +113,13 @@ Case-Study-4-Data-Bank/
 
 ## Key Insights
 
-> *(To be completed after reviewing the final outputs.)*
+- Data Bank operated across **5 regions**, with customer nodes distributed evenly throughout the network.
+- Customer reallocation periods averaged approximately **15 days**, indicating frequent movement between infrastructure nodes.
+- Deposits were the most common transaction type, accounting for the majority of customer banking activity.
+- Most customers maintained positive monthly balances, although purchases and withdrawals caused negative closing balances for some months.
+- Only a subset of customers consistently increased their monthly closing balances by more than **5%**, highlighting varying saving behaviours.
+- Running account balances enabled the comparison of multiple data-allocation strategies, demonstrating how storage requirements vary depending on whether balances are calculated using month-end snapshots, average balances, or real-time balances.
+- The interest-based allocation challenge showed that business rules significantly influence projected storage requirements, reinforcing the importance of clearly defined allocation policies.
 
 ---
 
