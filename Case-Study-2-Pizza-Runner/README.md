@@ -128,8 +128,6 @@ Case-Study-2-Pizza-Runner/
 
 ## Key Insights
 
-## Key Insights
-
 - Meat Lovers was the most popular pizza, generating more customer orders than Vegetarian pizzas.
 - Most deliveries were completed successfully, indicating strong overall operational performance.
 - Customer pizza customisations (extras and exclusions) were common, highlighting the importance of flexible order handling.
