@@ -4,6 +4,18 @@ This section examines Pizza Runner's revenue, delivery costs, customer ratings, 
 
 ---
 
+## Index
+
+| Question | Description |
+|----------|-------------|
+| [Question 1](#question-1) | Revenue without delivery fees |
+| [Question 2](#question-2) | Revenue including extra charges |
+| [Question 3](#question-3) | Runner ratings table design |
+| [Question 4](#question-4) | Combined delivery and ratings dataset |
+| [Question 5](#question-5) | Profit after runner payments |
+
+---
+
 # Question 1
 
 ## Question

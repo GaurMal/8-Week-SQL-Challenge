@@ -4,6 +4,19 @@ This section explores pizza customization by analyzing ingredients, exclusions, 
 
 ---
 
+## Index
+
+| Question | Description |
+|----------|-------------|
+| [Question 1](#question-1) | Standard ingredients for each pizza |
+| [Question 2](#question-2) | Most commonly added extra |
+| [Question 3](#question-3) | Most common exclusion |
+| [Question 4](#question-4) | Formatted customer order descriptions |
+| [Question 5](#question-5) | Alphabetical ingredient lists |
+| [Question 6](#question-6) | Total ingredient usage |
+
+---
+
 # Question 1
 
 ## Question

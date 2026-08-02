@@ -4,6 +4,23 @@ This section explores Pizza Runner's key business metrics, including order volum
 
 ---
 
+## Index
+
+| Question | Description |
+|----------|-------------|
+| [Question 1](#question-1) | Total customer orders |
+| [Question 2](#question-2) | Unique customer orders |
+| [Question 3](#question-3) | Successful deliveries by runner |
+| [Question 4](#question-4) | Delivered pizzas by type |
+| [Question 5](#question-5) | Pizza types ordered by customer |
+| [Question 6](#question-6) | Maximum pizzas in one delivered order |
+| [Question 7](#question-7) | Delivered pizzas with and without changes |
+| [Question 8](#question-8) | Pizzas with both exclusions and extras |
+| [Question 9](#question-9) | Pizza order volume by hour |
+| [Question 10](#question-10) | Order volume by day of week |
+
+---
+
 # Question 1
 
 ## Question

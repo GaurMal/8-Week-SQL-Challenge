@@ -4,6 +4,20 @@ This section analyzes runner performance and customer experience metrics, includ
 
 ---
 
+## Index
+
+| Question | Description |
+|----------|-------------|
+| [Question 1](#question-1) | Runner registrations by week |
+| [Question 2](#question-2) | Average runner pickup time |
+| [Question 3](#question-3) | Pizza count versus preparation time |
+| [Question 4](#question-4) | Average delivery distance by customer |
+| [Question 5](#question-5) | Longest versus shortest delivery time |
+| [Question 6](#question-6) | Runner speed by delivery |
+| [Question 7](#question-7) | Successful delivery percentage by runner |
+
+---
+
 # Question 1
 
 ## Question

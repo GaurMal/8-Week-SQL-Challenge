@@ -1,9 +1,15 @@
 # Case Study 1: Danny's Diner
 
+<p align="center">
+  <img src="images/cover.png" alt="Case Study 1 Cover" width="500">
+</p>
+
 **Database:** PostgreSQL  
 **Difficulty:** Beginner → Intermediate  
 **Questions Solved:** 10 + 2 Bonus  
 **Topics:** JOINs • CTEs • Window Functions • Aggregations
+
+---
 
 ## Overview
 
@@ -11,6 +17,7 @@ Danny's Diner is a SQL case study that analyzes customer purchasing behavior usi
 
 The analysis is performed using PostgreSQL and covers fundamental SQL concepts such as joins, aggregations, common table expressions (CTEs), window functions, ranking functions, and conditional logic to transform raw transactional data into actionable business insights.
 
+---
 
 ## Business Problem
 
@@ -26,6 +33,7 @@ The analysis focuses on understanding:
 
 These insights can help the restaurant better understand customer behaviour, personalise the dining experience, and evaluate whether the existing loyalty program should be expanded.
 
+---
 
 ## Dataset
 
@@ -39,12 +47,15 @@ The analysis uses three tables from the `dannys_diner` schema:
 
 Together, these tables make it possible to analyse customer transactions, menu preferences, spending patterns, and purchasing behaviour before and after membership.
 
+---
 
 ## Entity Relationship Diagram
 
 The diagram below shows the relationships between the `sales`, `menu`, and `members` tables.
 
-![Danny's Diner Entity Relationship Diagram](images/dannys-diner-erd.jpg)
+![Danny's Diner Entity Relationship Diagram](images/erd.jpg)
+
+---
 
 ## SQL Concepts Used
 
@@ -61,26 +72,33 @@ This case study demonstrates the following SQL concepts:
 - Conditional Aggregation
 - Business Rule Implementation
 
+---
 
 ## Folder Structure
 
 ```text
 Case-Study-1-Dannys-Diner/
 ├── images/
-│   └── dannys-diner-erd.jpg
+│   └── cover.png
+|   └── erd.jpg
 ├── Bonus Question.md
 ├── Dannys Diner schema.sql
 ├── README.md
 └── Solutions.md
 ```
 
+---
+
 ## Project Structure
 
 | File | Description |
 |------|-------------|
-| [`schema.sql`](Dannys%20Diner%20schema.sql) | Creates the schema, tables, and sample data used in the case study. |
-| [`solutions.md`](Solutions.md) | Contains solutions, outputs, approaches, and answers for all case-study questions. |
+| `images/` | Contains the cover image and Entity Relationship Diagram used in the documentation. |
+| [`Dannys Diner schema.sql`](Dannys%20Diner%20schema.sql) | Creates the schema, tables, and sample data used in the case study. |
+| [`Solutions.md`](Solutions.md) | Contains solutions, outputs, approaches, and answers for all case-study questions. |
 | [`Bonus Question.md`](Bonus%20Question.md) | Contains solutions for the bonus questions. |
+
+---
 
 ## Key Insights
 
@@ -90,6 +108,7 @@ Case-Study-1-Dannys-Diner/
 - Customer A and B became members, allowing analysis of purchasing behaviour before and after joining.
 - Loyalty point analysis showed Customer A earned 1370 points and Customer B earned 820 points by the end of January.
 
+---
 
 ## Learning Outcomes
 
@@ -101,6 +120,7 @@ Through this case study, I strengthened my understanding of:
 - Translating business rules into SQL using CASE expressions.
 - Presenting query results in a structured and readable format suitable for business stakeholders.
 
+---
 
 ## Repository Navigation
 
